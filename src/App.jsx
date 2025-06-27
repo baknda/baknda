@@ -6,12 +6,11 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Prototipo from './pages/prototipo';
 
-
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/baknda">
       <Routes>
-        <Route path="/proto" element={< Prototipo />} />
+        <Route path="/proto" element={<Prototipo />} />
       </Routes>
     </BrowserRouter>
   );
